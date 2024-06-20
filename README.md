@@ -1,4 +1,4 @@
-# 🤖 Chatbots Exam ESIEA 
+# 🤖 Chatbot Exam ESIEA 
 
 ## ⚡ About the Project
 
