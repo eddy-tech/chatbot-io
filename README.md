@@ -1,4 +1,4 @@
-# 🤖 Chatbots Academic Exam
+# 🤖 Chatbots Exam ESIEA 
 
 ## ⚡ About the Project
 
@@ -13,8 +13,8 @@ This project involves creating three interactive bots capable of responding to v
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Pexilo/chatbots.git
-   cd chatbots
+   git clone https://github.com/eddy-tech/chatbot-io.git
+   cd chatbot-io
    ```
 
 2. Install the dependencies:
