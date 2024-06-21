@@ -47,7 +47,7 @@ bots[1].addCommand(
   () =>
     "Commandes disponibles <code>hello</code> <code>help</code> <code>steam 'playerId'</code> <code>minecraft 'playerId'</code> <code>xbox 'playerId'</code>"
 );
-// Utilisation d'arguments pour les commandes
+
 bots[1].addCommand("steam", async (playerId) => {
   const stats = await fetchPlayerStats("steam", playerId);
   return stats;

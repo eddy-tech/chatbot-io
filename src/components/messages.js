@@ -19,14 +19,12 @@ export const addMessage = (messageContainer, sender, text, isUser) => {
   const msg = message(sender, text, timestamp, isUser);
   const botName = document.querySelector("#selectedBot").innerText;
 
-  // Ajouter la classe "user" ou "bot" pour le style
   if (isUser) {
     msg.classList.add("user");
   } else {
     msg.classList.add("bot");
   }
 
-  // Ajouter le message à la conversation
   messageContainer.appendChild(msg);
   messageContainer.scrollTop = messageContainer.scrollHeight;
 
@@ -36,12 +34,10 @@ export const addMessage = (messageContainer, sender, text, isUser) => {
   saveMessagesToLocalStorage(botName, currentMessages);
 };
 
-// Sauvegarder da,ns le localStorage
 export const saveMessagesToLocalStorage = (botName, messages) => {
   localStorage.setItem(`chat_${botName}`, JSON.stringify(messages));
 };
 
-// Récupérer les messages du localStorage
 export const getMessagesFromLocalStorage = (botName) => {
   const messages = localStorage.getItem(`chat_${botName}`);
   return messages ? JSON.parse(messages) : [];

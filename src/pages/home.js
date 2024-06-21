@@ -10,7 +10,6 @@ export const home = () => {
   app.appendChild(messages());
   app.appendChild(chat());
 
-  // Initialiser le html pour le bot sélectionné
   const selectedBotInfo = document.createElement("div");
   selectedBotInfo.id = "selectedBotInfo";
   selectedBotInfo.innerHTML = `
@@ -22,7 +21,6 @@ export const home = () => {
   return app;
 };
 
-// Fonction pour récupérer l'avatar du bot sélectionné
 export const getSelectedBotAvatar = () => {
   const selectedBotAvatar = document.getElementById("selectedBotAvatar");
   return selectedBotAvatar ? selectedBotAvatar.src : robotImg;
